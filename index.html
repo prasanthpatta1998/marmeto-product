@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marmeto Assignment L2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/03f5ac2067.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section id="main-container">
+      <div class="images-container">
+        <img id="product-image" alt="product_image" />
+        <div id="thumbnail-container">
+          <!-- <img
+            src="https://s3-alpha-sig.figma.com/img/2b85/4ec0/815f49c8ce3ddd231e2da63ce0596dc4?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NX64UEzjZr6tVke7pb3SwrBDL4OrHcbxB~0bSeywWbyanzLgt190hpANZd0Jy28yr7~Zt2rYiIwTfxt3u2TzcbCIBoUzJlGVqn9T4N4PW2fbiMJ1bjUsruWRAXbm-uXmh~QepS~vWS64seiyJwIW~4V9Z-bF6WOh21DJbTy5tEHNDNkGeJ839w0dNHj4l391MhshpSDYwEy6UWmMuxg02SC6pm76I9BclXMS7lUYaA2pNubm5zofUUUpT9-vKcEJueuzqXgKBhcnrhIMDH0Azzh9OA9eLubztT2pe9uPVdB~2yoDY~1mQ7t9gC-yjPiIheOjNdJa16sf8wLwvurAGQ__"
+            alt="thumbnail1"
+            id="thumbnail1"
+          />
+          <img
+            src="https://s3-alpha-sig.figma.com/img/7f07/20f0/38539658df252c621f52c64231e8986a?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RIVXGlAdY2agtfXPjY~XlDCLC06Qh3J2JTQYLTEjmGZPLwrZ0fELCB5-~2XpY9WfhLawisG6u3T55-qLakZj6s6m1jpzhooKXmUVngLnsJ3NoA4xE331XiU3ayA14FXAQlUihf8Kq~eLo7cEsVYJBi3alKBKw~05z47KlVzGkY3XhiqywhtCIfdR70TTx-reAnDtrOAX8FifwQEvBmBNyChikBb6VJ7GNmX2~Zu4pfm4UNa84m5ENF3Rn6G24TEd1sYzyKma~WPsc9vIsrREnziuM03GQ5SMMw1LX0RAgkfbG7lJ05NYxzwSecfiH5~Riemyb0OU~qOYQI58K6LfUw__"
+            alt="thumbnail2"
+            id="thumbnail2"
+          />
+          <img
+            src="https://s3-alpha-sig.figma.com/img/8a12/5fd1/8ad1df2ca3d3367baa54e79cf0caeff1?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JP4tpqyxhStbOXsfeDyTfAkFLKEqlgJL~-BLLZhfj-LS1dQLwjo3eds0XLk91~izB91c~5aE~ekFxOHoSeBMwKg6xnsTkl3uALTNdD5nToRSVb2po5vvPPkN6~JYRjR3DFqNucfEtx0tVurSzXCLEOwTbuGrcIj-bjXpFm0JuZsHX0J8EitM-Np9673q7qjC2XJVAUDuHER2DZijlC1fmA3Z7xhxhU-jCSDj-DfU81idfWwuJILQ96bXtvAoM3ygbAIix90w36udAsqgNC-eRXDEvmypN3vbUfL3JkA-LjYf0eVX-Ua4q0JY~hRv8RemrZ0FRxSPFylDfX3wYbBpoQ__"
+            alt="thumbnail3"
+            id="thumbnail3"
+          />
+          <img
+            src="https://s3-alpha-sig.figma.com/img/2b85/4ec0/815f49c8ce3ddd231e2da63ce0596dc4?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NX64UEzjZr6tVke7pb3SwrBDL4OrHcbxB~0bSeywWbyanzLgt190hpANZd0Jy28yr7~Zt2rYiIwTfxt3u2TzcbCIBoUzJlGVqn9T4N4PW2fbiMJ1bjUsruWRAXbm-uXmh~QepS~vWS64seiyJwIW~4V9Z-bF6WOh21DJbTy5tEHNDNkGeJ839w0dNHj4l391MhshpSDYwEy6UWmMuxg02SC6pm76I9BclXMS7lUYaA2pNubm5zofUUUpT9-vKcEJueuzqXgKBhcnrhIMDH0Azzh9OA9eLubztT2pe9uPVdB~2yoDY~1mQ7t9gC-yjPiIheOjNdJa16sf8wLwvurAGQ__"
+            alt="thumbnail4"
+            id="thumbnail4"
+          /> -->
+        </div>
+      </div>
+      <div class="marmeto-container">
+        <small id="vendor"></small>
+        <strong id="title"></strong>
+        <hr id="horizontal-line" style="margin: 20px 0" />
+        <strong id="price"><span id="percentage">30%</span></strong>
+        <p id="compare-at-price"></p>
+        <hr id="horizontal-line" style="margin: 20px 0" />
+        <small>Choose a color</small>
+        <div id="colors-container"></div>
+        <hr id="horizontal-line" style="margin: 20px 0" />
+        <small>Choose s size</small>
+        <div id="choose-a-size"></div>
+        <div class="addcart-container">
+          <div class="increment-container">
+            <b id="decrement">-</b>
+            <b id="value">1</b>
+            <b id="increment">+</b>
+          </div>
+          <button id="addtocart">Add to cart</button>
+        </div>
+        <p id="cart-item-message"></p>
+        <hr id="horizontal-line" style="margin: 20px 0" />
+        <p id="description"></p>
+      </div>
+    </section>
+  </body>
+</html>
