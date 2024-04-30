@@ -17,24 +17,29 @@ window.addEventListener("DOMContentLoaded", () => {
         let productImage = document.querySelector("#product-image");
         productImage.src = productData.images[0].src;
 
-        const thumbnailContainer = document.querySelector('#thumbnail-container')
+        const thumbnailContainer = document.querySelector(
+          "#thumbnail-container"
+        );
 
-        productData.images.forEach((eachImage,index) => {
-          const image = document.createElement('img')
-          image.src = eachImage.src
-          image.alt = `thumbnail${index}`
+        productData.images.forEach((eachImage, index) => {
+          const image = document.createElement("img");
+          image.src = eachImage.src;
+          image.alt = `thumbnail${index}`;
 
-          thumbnailContainer.appendChild(image)
+          thumbnailContainer.appendChild(image);
 
-          image.addEventListener('click', () => {
-            productImage.src = image.src
-            image.style.border = '2px solid blue'
-          })
+          image.addEventListener("click", () => {
+            document.querySelectorAll("img").forEach((img) => {
+              img.style.border = "none";
+            });
+
+            productImage.src = image.src;
+            image.style.border = "2px solid blue";
+          });
         });
 
         //  Images not displaying so i followed this way
-        
-        
+
         // document.querySelector("#thumbnail1").addEventListener("click", () => {
         //   productImage.src = document.querySelector("#thumbnail1").src;
         // });
@@ -79,10 +84,15 @@ window.addEventListener("DOMContentLoaded", () => {
           const colorName = Object.keys(color)[0];
           displayColor.style.backgroundColor = color[colorName];
           displayColor.classList.add("color");
+          displayColor.classList.add('colorlist')
 
           colorsContainer.appendChild(displayColor);
 
           displayColor.addEventListener("click", () => {
+            document.querySelectorAll(".colorlist").forEach((element) => {
+              element.style.outline = `0px`;
+              console.log(element)
+            });
 
             productActions.activeColorId = colorName;
             clickIcon.classList.add(
